@@ -19,5 +19,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Neighbors"
-include(":app")
-include(":data")
+//include(":app")
+//include(":data")
