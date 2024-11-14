@@ -10,7 +10,7 @@ object DataModule {
         return NeighborRepositoryImpl.instance()
     }
 
-    internal fun provideNeighborService(): NeighborService {
+    fun provideNeighborService(): NeighborService {
         return InMemoryNeighborService()
     }
 }

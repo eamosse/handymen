@@ -32,7 +32,7 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = HomeFragmentBinding.inflate(inflater, container, false)
+       // binding = HomeFragmentBinding.inflate(inflater, container, false)
         val root: View = binding.root
         binding.neighborsList.adapter = adapter
         binding.neighborsList.layoutManager = LinearLayoutManager(requireContext())

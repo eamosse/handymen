@@ -3,7 +3,7 @@ package com.eamosse.android.data.api
 import com.eamosse.android.data.model.Neighbor
 import com.eamosse.android.data.utils.DUMMY_NeighborS
 
-interface NeighborService {
+internal interface NeighborService {
     fun getNeighbors(): List<Neighbor>
 }
 

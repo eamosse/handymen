@@ -20,9 +20,6 @@ internal class NeighborRepositoryImpl private constructor() : NeighborRepository
         private var instance: NeighborRepository? = null
 
         fun instance(): NeighborRepository {
-            if (instance == null) {
-                instance = NeighborRepositoryImpl()
-            }
             return instance!!
         }
     }

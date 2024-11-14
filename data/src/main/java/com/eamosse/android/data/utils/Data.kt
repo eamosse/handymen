@@ -3,7 +3,7 @@ package com.eamosse.android.data.utils
 import com.eamosse.android.data.model.Neighbor
 
 // Internal makes the constant visible only in the module
-internal val DUMMY_NeighborS: List<Neighbor> = listOf(
+private val DUMMY_NeighborS: List<Neighbor> = listOf(
     Neighbor(
         1, "Caroline",
         "https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk",
