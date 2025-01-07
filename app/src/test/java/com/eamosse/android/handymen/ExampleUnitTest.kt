@@ -1,4 +1,4 @@
-package com.eamosse.android.neighbors
+package com.eamosse.android.handymen
 
 import org.junit.Test
 

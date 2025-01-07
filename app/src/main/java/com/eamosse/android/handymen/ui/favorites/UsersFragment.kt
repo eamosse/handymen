@@ -1,4 +1,4 @@
-package com.eamosse.android.neighbors.ui.favorites
+package com.eamosse.android.handymen.ui.favorites
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.eamosse.android.neighbors.databinding.FavoriteNeighborsFragmentBinding
+import com.eamosse.android.handymen.databinding.FavoriteUsersFragmentBinding
 
-class FavoritesFragment : Fragment() {
+class UsersFragment : Fragment() {
 
-    private lateinit var binding: FavoriteNeighborsFragmentBinding
+    private lateinit var binding: FavoriteUsersFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -21,7 +21,7 @@ class FavoritesFragment : Fragment() {
         val favoritesViewModel =
             ViewModelProvider(this).get(FavoritesViewModel::class.java)
 
-        binding = FavoriteNeighborsFragmentBinding.inflate(inflater, container, false)
+        binding = FavoriteUsersFragmentBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textNotifications

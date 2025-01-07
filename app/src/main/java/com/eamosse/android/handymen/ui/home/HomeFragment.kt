@@ -1,4 +1,4 @@
-package com.eamosse.android.neighbors.ui.home
+package com.eamosse.android.handymen.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,14 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.eamosse.android.neighbors.databinding.HomeFragmentBinding
+import com.eamosse.android.handymen.databinding.HomeFragmentBinding
 
 class HomeFragment : Fragment() {
 
     private lateinit var binding: HomeFragmentBinding
 
 
-    private val adapter: NeighborsAdapter by lazy { NeighborsAdapter() }
+    private val adapter: UsersAdapter by lazy { UsersAdapter() }
 
     // The old fashion way to get the view model
     // We ask the view model provider to give us the view model
@@ -34,15 +34,15 @@ class HomeFragment : Fragment() {
     ): View {
        // binding = HomeFragmentBinding.inflate(inflater, container, false)
         val root: View = binding.root
-        binding.neighborsList.adapter = adapter
-        binding.neighborsList.layoutManager = LinearLayoutManager(requireContext())
+        binding.list.adapter = adapter
+        binding.list.layoutManager = LinearLayoutManager(requireContext())
         return root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // We observe the neighbors list, when the list is updated, we submit the new list to the adapter
-        viewModel.neighbors.observe(viewLifecycleOwner) {
+        // We observe the users list, when the list is updated, we submit the new list to the adapter
+        viewModel.users.observe(viewLifecycleOwner) {
             adapter.submitList(it)
         }
     }

@@ -1,4 +1,4 @@
-package com.eamosse.android.neighbors
+package com.eamosse.android.handymen
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -7,7 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.eamosse.android.neighbors.databinding.MainActivityBinding
+import com.eamosse.android.handymen.databinding.MainActivityBinding
 
 class MainActivity : AppCompatActivity() {
 

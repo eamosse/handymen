@@ -1,32 +1,21 @@
 
-# Qui sont mes voisins ?
+# Handy Men
 
-Dans ce TP, nous allons développer une application mobile permettant de gérer une liste de
-personnes (voisins) en respectant le principe de clean architecture.
+Dans ce TP, nous allons une application de mise en relation entre particuliers. L'objectif est de développer
+une application mobile permettant à des utilisateurs de proposer des services (aka des bricolleurs) 
+et à d'autres de solliciter des services. 
 
-## Fonctionnalités principales
-
-- Récupérer et afficher une liste de voisins
-- Ajouter un voisin à la liste
-- Supprimer un voisin de la liste
-- Consulter le détail d'un voisin
-- Ajouter un voisin à la liste de favoris
-- Retirer un voisin de la liste de favoris
-- Afficher les voisins favoris
-- Partager le profil d'un voisin (via SMS, email, etc.)
-- Consulter le profil d'un voisin sur un réseau social (Facebook, LinkedIn, etc.)
-
-## Fonctionnalités secondaires
-
-- Rechercher un voisin (par nom, phone, etc.)
-- Trier les voisins (par nom, date de création, etc.)
-
-## Mécanisme de stockage
-
-- Dans la version V0 : Les voisins sont stockés en mémoire (pas de base de données)
-- Dans une version V1 : Les voisins sont stockés dans une base de données (Room)
-- Dans une version V2 : Les voisins sont stockés dans une base de données (Room) et sur Firebase
-- Dans une version V3 : Les voisins sont stockés dans une base de données (Room) et sur un serveur (API REST)
+## V0 : Faire fonctionner la base du code
+>> Les données sont gérées en mémoire
+- Récupérer et afficher une liste de bricolleurs (gérée en mémoire)
+- Faire les opérations CRUD sur les bricolleurs (add, get, edit, delete)
+- Consulter le détail
+- Ajouter/Supprimer un utilisateur dans les favoris
+- Afficher ses favoris
+- Partager le profil d'un bricoller (via SMS, email, etc.)
+- Visiter la page d'un bricolleur (Facebook, LinkedIn, etc.)
+- Rechercher (par nom, phone, etc.)
+- Trier (par nom, date de création, etc.)
 
 ## Architecture du code
 
@@ -59,37 +48,36 @@ notre code dans deux modules distincts :
 Implementer la version V0 de l'application en respectant les étapes suivantes :
 
 ### Étape 1 : Prise en main du projet
-
 - Importez le projet dans Android Studio et lancez l'application. Vous avez déjà une base de code
-  permettant de gérer la navigation et l'affichage des voisins.
+  permettant de gérer la navigation et l'affichage des utilisateurs.
 - Il est probable que vous rencontriez des erreurs de compilation. Identifiez et corrigez-les.
 - Ajouter une toolbar à l'activité principale.
-- Remplacer les icons de la barre de navigation par des icons plus explicites. 
+- Remplacer les icons de la barre de navigation par des icons plus adaptés. 
 - Gérer au moins deux langues (français et anglais) pour les textes de l'application.
 
-### Étape 2 : Optimiser la liste des voisins
+### Étape 2 : Optimiser la liste des utilisateurs
 
 - Complétez la vue liste en ajoutant d'autres données (photo, bio, icônes (likes, suppression, ...), etc.)
-- Ajoutez un fragment pour afficher le détail d'un voisin.
-- Supprimez un voisin de la liste (depuis la liste ou dans la vue de détail).
+- Ajoutez un fragment pour afficher le détail d'un utilisateur.
+- Supprimez un utilisateur de la liste (depuis la liste ou dans la vue de détail).
 
 ### Étape 3 : Gestion des favoris
 
-- Ajoutez/supprimez un voisin en favoris (à partir de la liste ou dans la vue de détail).
-- Affichez la liste des voisins favoris.
+- Ajoutez/supprimez un utilisateur en favoris (à partir de la liste ou dans la vue de détail).
+- Affichez la liste des utilisateurs favoris.
 
-### Étape 4 : Créer de nouveaux voisins
+### Étape 4 : Créer de nouveaux utilisateurs
 
-- Ajoutez un fragment permettant de créer un voisin.
+- Ajoutez un fragment permettant de créer un utilisateur.
 
-### Étape 5 : Partager le profil d'un voisin
+### Étape 5 : Partager le profil d'un utilisateur
 
-- Partagez le profil d'un voisin (via SMS, email, etc.)
-- Consultez le profil d'un voisin sur un réseau social (Facebook, LinkedIn, etc.)
+- Partagez le profil d'un utilisateur (via SMS, email, etc.)
+- Consultez le profil d'un utilisateur sur un réseau social (Facebook, LinkedIn, etc.)
 
-### Étape 6 : Rechercher et trier les voisins
+### Étape 6 : Rechercher et trier les utilisateurs
 
-- Recherchez un voisin (par nom, phone, etc.)
+- Recherchez un utilisateur (par nom, phone, etc.)
 - Triez la liste (par nom, date de création, etc.)
 
 ### Étape 7 : Injection de dépendances

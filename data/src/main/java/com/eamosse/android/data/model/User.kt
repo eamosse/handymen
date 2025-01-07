@@ -1,6 +1,6 @@
 package com.eamosse.android.data.model
 
-data class Neighbor(
+data class User(
     val id: Long,
     val name: String,
     val avatarUrl: String,

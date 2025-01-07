@@ -1,10 +1,10 @@
-package com.eamosse.android.neighbors.ui.add
+package com.eamosse.android.handymen.ui.add
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class AddNeighborViewModel : ViewModel() {
+class AddUserViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is dashboard Fragment"

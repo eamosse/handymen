@@ -1,4 +1,4 @@
-package com.eamosse.android.neighbors.ui.add
+package com.eamosse.android.handymen.ui.add
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,25 +7,25 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.eamosse.android.neighbors.databinding.AddNeighborFragmentBinding
+import com.eamosse.android.handymen.databinding.AddUserFragmentBinding
 
-class AddNeighborFragment : Fragment() {
+class AddUserFragment : Fragment() {
 
-    private lateinit var binding: AddNeighborFragmentBinding
+    private lateinit var binding: AddUserFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val addNeighborViewModel =
-            ViewModelProvider(this).get(AddNeighborViewModel::class.java)
+        val addUserViewModel =
+            ViewModelProvider(this).get(AddUserViewModel::class.java)
 
-        binding = AddNeighborFragmentBinding.inflate(inflater, container, false)
+        binding = AddUserFragmentBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textDashboard
-        addNeighborViewModel.text.observe(viewLifecycleOwner) {
+        addUserViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

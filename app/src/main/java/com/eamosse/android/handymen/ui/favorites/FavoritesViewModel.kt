@@ -1,4 +1,4 @@
-package com.eamosse.android.neighbors.ui.favorites
+package com.eamosse.android.handymen.ui.favorites
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

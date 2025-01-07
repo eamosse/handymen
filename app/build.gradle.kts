@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.eamosse.android.neighbors"
+    namespace = "com.eamosse.android.handymen"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.eamosse.android.neighbors"
+        applicationId = "com.eamosse.android.handymen"
         minSdk = 30
         targetSdk = 34
         versionCode = 1

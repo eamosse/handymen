@@ -5,7 +5,7 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/neighbor_name"
+        android:id="@+id/name"
         style="@style/TextAppearance.MaterialComponents.Headline4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
