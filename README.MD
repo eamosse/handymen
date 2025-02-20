@@ -53,7 +53,7 @@ Implementer la version V0 de l'application en respectant les étapes suivantes :
 - Il est probable que vous rencontriez des erreurs de compilation. Identifiez et corrigez-les.
 - Ajouter une toolbar à l'activité principale.
 - Remplacer les icons de la barre de navigation par des icons plus adaptés. 
-- Gérer au moins deux langues (français et anglais) pour les textes de l'application.
+- Gérer au moins deux langues (français et anglais) pour tous les textes de l'application.
 
 ### Étape 2 : Optimiser la liste des utilisateurs
 
@@ -66,20 +66,16 @@ Implementer la version V0 de l'application en respectant les étapes suivantes :
 - Ajoutez/supprimez un utilisateur en favoris (à partir de la liste ou dans la vue de détail).
 - Affichez la liste des utilisateurs favoris.
 
-### Étape 4 : Créer de nouveaux utilisateurs
-
+### Étape 4 : Ajouter des utilisateurs
 - Ajoutez un fragment permettant de créer un utilisateur.
 
 ### Étape 5 : Partager le profil d'un utilisateur
-
 - Partagez le profil d'un utilisateur (via SMS, email, etc.)
 - Consultez le profil d'un utilisateur sur un réseau social (Facebook, LinkedIn, etc.)
 
 ### Étape 6 : Rechercher et trier les utilisateurs
-
-- Recherchez un utilisateur (par nom, phone, etc.)
+- Mise en place d'une bar de recherche multi-critaires (par nom, phone, etc.)
 - Triez la liste (par nom, date de création, etc.)
 
 ### Étape 7 : Injection de dépendances
-Jusqu'ici nous avons utilisé des singleton pour récupérer les instances d'objects partagés. 
-Dans cette étape, vous allez utiliser la librairie Dagger Hilt pour l'injection de dépendances.
+- Utilisez la librairie Dagger Hilt pour gérer plus efficacement l'injection de dépendances.
